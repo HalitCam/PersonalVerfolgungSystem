@@ -1,15 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PersonalVerfolgungSystem</title>
-    <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 </head>
-<body>
 
-    
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 ">
+
+                <form action="" id="formUser" method="post">
+                    <h1 style="color: blue;">Personel Hinzufugen :</h1>
+                    <input class="form-control" type="text" name="userName" id="userName">
+                    <label class="form-label" for="userName">Firstname</label>
+
+                    <input class="form-control" type="text" name="lastName" id="lastName">
+                    <label class="form-label" for="lastName">Lastname</label>
+                    <br>
+
+                    <div class="mt-2">
+                        <button style="margin-right: 7px;" class="btn btn-primary " type="reset">Zurücksetzen</button>
+                        <button class="mt-3 btn btn-danger" type="submit">Speichern</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-5">
+                <img src="https://picsum.photos/200/300" alt="" srcset="">
+            </div>
+
+        </div>
+    </div>
+
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
 </body>
+
 </html>
