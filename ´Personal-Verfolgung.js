@@ -33,12 +33,17 @@ function test(username, lastname) {
         // liDOM.classList.add("list-group-item")
         // liDOM.innerHTML = USER_INFO
         // ulDOM.appendChild(liDOM)
-      fetch(personalData.json)
-      .then(console.log(data=>data.name)
+      fetch("personalData.json")
+      .then(response=>response.json())
+      .then(data=>{console.log(data.name)})
+      .catch(error=>{console.log("Veri alinirken hata olustu", error)})
+    
 
-      )
+
+      
 
       
     
     }
+    
   }
