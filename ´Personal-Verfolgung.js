@@ -23,18 +23,22 @@ function submitFunktion(event) {
 
 }
 
-
 function test(username, lastname) {
     if (username === "" && lastname === "") {
        alertDOM.innerHTML = ALERT
     }
      else if(username && lastname) {
-        const USER_INFO = `${userNameDOM.value} ${lastNameDOM.value} `
-        const liDOM = document.createElement("li")
-        liDOM.classList.add("list-group-item")
-        liDOM.innerHTML = USER_INFO
-        ulDOM.appendChild(liDOM)
+        // const USER_INFO = `${userNameDOM.value} ${lastNameDOM.value} `
+        // const liDOM = document.createElement("li")
+        // liDOM.classList.add("list-group-item")
+        // liDOM.innerHTML = USER_INFO
+        // ulDOM.appendChild(liDOM)
+      fetch(personalData.json)
+      .then(console.log(data=>data.name)
+
+      )
+
+      
+    
     }
-
-}
-
+  }
